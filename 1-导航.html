@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./1.css">
+    <link rel="stylesheet" href="./iconfont.css">
+    <style>
+        .icon {
+          width: 1em;
+          height: 1em;
+          vertical-align: -0.15em;
+          fill: currentColor;
+          overflow: hidden;
+        }
+        </style>
+</head>
+<body>
+    <div class="nav">
+        <span style="--i: 1;--x: -1;--y: 0"><i class="iconfont icon-gouwuche"></i></span>
+        <span style="--i: 2;--x: 1;--y: 0"><i class="iconfont icon-canyin"></i></span>
+        <span style="--i: 3;--x: 0;--y: 1"><i class="iconfont icon-jingdian"></i></span>
+        <span style="--i: 4;--x: 0;--y: -1"><i class="iconfont icon-zhusu"></i></span>
+        <span style="--i: 5;--x: 1;--y: 1"><i class="iconfont icon-duanxin"></i></span>
+        <span style="--i: 6;--x: 0;--y: 0"><i class="iconfont icon-xiangqu"></i></span>
+        <span style="--i: 7;--x: -1;--y: -1"><i class="iconfont icon-dizhi"></i></span>
+        <span style="--i: 8;--x: -1;--y: 1"><i class="iconfont icon-feiji"></i></span>
+        <span style="--i: 9;--x: 1;--y: -1"><i class="iconfont icon-huobiduihuan"></i></span>
+    </div>
+    <script src="./iconfont.js"></script>
+    <script>
+        let nav = document.querySelector(".nav")
+        // alert(nav)
+        nav.onclick = function(){
+            nav.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
